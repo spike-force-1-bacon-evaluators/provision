@@ -1,0 +1,25 @@
+---
+- name: install epel-release and git
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - epel-release
+    - git
+
+- name: install ansible
+  yum:
+    name: ansible
+    state: present
+
+
+- name: copy .ansible.conf
+  template:
+    src: .ansible.cfg.j2
+    dest: /home/{{ user }}/.ansible.cfg
+
+- name: copy .inventory
+  template:
+    src: .host_inventory.j2
+    dest: /home/{{ user }}/.inventory
+...

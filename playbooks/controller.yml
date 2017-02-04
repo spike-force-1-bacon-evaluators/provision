@@ -1,0 +1,18 @@
+---
+- hosts: controller
+  become: yes
+
+  vars_files:
+    - ./vars/credentials.yml
+
+  roles:
+    - ansible
+
+  tasks:
+    - name: generate SSH keys
+      user:
+        name: controller
+        generate_ssh_key: yes
+        ssh_key_bits: 4096
+        ssh_key_file: /home/{{ controller['user'] }}/.ssh/id_rsa
+...
