@@ -20,3 +20,7 @@ ssh ansible@138.68.145.244
 ansible-playbook playbooks/jenkins.yml -K
 ```
 Tested version: `ansible 2.2.1.0`
+
+## [Documentation](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/README.md)
+
+### [Ways of Working](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/docs/ways-of-working.md)
