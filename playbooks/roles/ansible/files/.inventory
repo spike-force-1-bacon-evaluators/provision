@@ -1,2 +1,5 @@
 [controller]
 controller.sf1.bacon ansible_host=178.62.28.203 ansible_user=ansible
+
+[bacon]
+bacon.sf1 ansible_host=46.101.72.238 ansible_user=bacon
