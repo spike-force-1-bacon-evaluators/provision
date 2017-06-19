@@ -1,10 +1,11 @@
-# Provision
-
-## Ansible Control Node
+# PROVISION
 
 - [Documentation](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/README.md)
 
 - [Ways of Working](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/docs/ways-of-working.md)
+
+
+## Ansible Control Node
 
 Install control node on DigitalOcean instance:
 ```
@@ -23,4 +24,10 @@ Install Jenkins:
 ssh ansible@IP
 ansible-playbook playbooks/jenkins.yml -K
 ```
+
+Install Neo4j
+```
+ansible-playbook playbooks/neo4j.yml -K
+```
+
 Tested version: `ansible 2.2.1.0`
