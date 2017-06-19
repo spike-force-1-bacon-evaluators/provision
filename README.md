@@ -10,13 +10,13 @@ ansible-playbook playbooks/controller.yml -i playbooks/roles/ansible/files/.inve
 
 Get playbooks:
 ```
-ssh ansible@138.68.145.244
+ssh ansible@IP
 git clone https://github.com/spike-force-1-bacon-evaluators/playbooks.git
 ```
 
 Install Jenkins:
 ```
-ssh ansible@138.68.145.244
+ssh ansible@IP
 ansible-playbook playbooks/jenkins.yml -K
 ```
 Tested version: `ansible 2.2.1.0`
