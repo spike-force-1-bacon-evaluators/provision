@@ -2,6 +2,10 @@
 
 ## Ansible Control Node
 
+- [Documentation](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/README.md)
+
+- [Ways of Working](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/docs/ways-of-working.md)
+
 Install control node on DigitalOcean instance:
 ```
 git clone git@github.com:spike-force-1-bacon-evaluators/provision.git
@@ -20,7 +24,3 @@ ssh ansible@IP
 ansible-playbook playbooks/jenkins.yml -K
 ```
 Tested version: `ansible 2.2.1.0`
-
-## [Documentation](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/README.md)
-
-### [Ways of Working](https://github.com/spike-force-1-bacon-evaluators/documentation/blob/master/docs/ways-of-working.md)
